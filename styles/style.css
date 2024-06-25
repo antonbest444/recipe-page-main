@@ -19,13 +19,14 @@
 html,
 main {
   background-color: var(--color-background);
-  height: 280vh;
+  height: 300vh;
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: var(--paragraph-color);
+  font-family: var(--font-family-of);
 }
 
 h1 {
@@ -37,6 +38,7 @@ h1 {
 h2 {
   color: var(--brown-color);
   margin-bottom: 10px;
+  font-family: var(--font-family-ys);
 }
 
 h3 {
@@ -55,6 +57,14 @@ ol {
 
 li {
   margin-bottom: 8px;
+}
+
+tr,
+td {
+  padding: 8px;
+  border: 1px solid grey;
+  border-left: none;
+  border-right: none;
 }
 .text-black {
   color: var(--paragraph-color);
@@ -110,10 +120,12 @@ li {
 
 .ingredients-section {
   margin-bottom: 40px;
+  border-bottom: 0.5px solid rgb(196, 196, 196);
 }
 
 .instructions-section {
   margin-bottom: 40px;
+  border-bottom: 0.5px solid rgb(196, 196, 196);
 }
 
 .footer-paragraph--margin {
@@ -123,14 +135,6 @@ li {
 .nutrition-table {
   width: 500px;
   border-collapse: collapse;
-}
-
-tr,
-td {
-  padding: 8px;
-  border: 1px solid grey;
-  border-left: none;
-  border-right: none;
 }
 
 .nutrition-values--color {
