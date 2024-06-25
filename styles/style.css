@@ -119,3 +119,20 @@ li {
 .footer-paragraph--margin {
   margin-bottom: 10px;
 }
+
+.nutrition-table {
+  width: 500px;
+  border-collapse: collapse;
+}
+
+tr,
+td {
+  padding: 8px;
+  border: 1px solid grey;
+  border-left: none;
+  border-right: none;
+}
+
+.nutrition-values--color {
+  color: var(--brown-color);
+}
