@@ -140,3 +140,8 @@ td {
 .nutrition-values--color {
   color: var(--brown-color);
 }
+
+.text-bold {
+  font-weight: 700;
+  color: rgb(103, 100, 100);
+}
