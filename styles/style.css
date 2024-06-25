@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --brown-color: hsl(14, 45%, 36%);
+  --primary-color: hsl(332, 51%, 32%);
+  --color-background: hsl(334, 30%, 82%);
+  --white-color: hsl(0, 0%, 100%);
+  --paragraph-color: hsl(30, 2%, 53%);
+  --bold-font: 400;
+  --font-size-base: 16px;
+  --font-family-ys: "Young Serif";
+  --font-family-of: "Outfit";
+  --border-radius-base: 10px;
+}
+
+html,
+main {
+  background-color: var(--color-background);
+  height: 280vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--paragraph-color);
+}
+
+h1 {
+  font-size: 30px;
+  font-family: var(--font-family-ys);
+  color: rgb(63, 61, 61);
+}
+
+h2 {
+  color: var(--brown-color);
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  list-style: none;
+  counter-reset: list-order;
+}
+
+li {
+  margin-bottom: 8px;
+}
+.text-black {
+  color: var(--paragraph-color);
+}
+
+.bullet-purple::before {
+  content: "•";
+  color: var(--primary-color);
+  margin-right: 10px;
+}
+
+.bullet-brown::before {
+  content: "•";
+  color: var(--brown-color);
+  margin-right: 10px;
+}
+
+.number-brown::before {
+  counter-increment: list-order;
+  content: counter(list-order) ".";
+  color: var(--brown-color);
+  margin-right: 10px;
+}
+
+.recipe__container {
+  border-radius: var(--border-radius-base);
+  background-color: var(--white-color);
+  width: 600px;
+  padding: 50px;
+  font-size: var(--font-size-base);
+}
+
+.recipe__pic--fit {
+  border-radius: var(--border-radius-base);
+  text-align: center;
+  height: 300px;
+  width: 500px;
+  max-width: 100%;
+  margin-bottom: 25px;
+}
+
+.top-paragraph--center {
+  margin-top: 20px;
+}
+
+.cook-time-section {
+  background-color: var(--color-background);
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 15px 10px;
+  border-radius: var(--border-radius-base);
+}
+
+.ingredients-section {
+  margin-bottom: 40px;
+}
+
+.instructions-section {
+  margin-bottom: 40px;
+}
+
+.footer-paragraph--margin {
+  margin-bottom: 10px;
+}
